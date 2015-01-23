@@ -6,6 +6,15 @@
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
   </head>
   <body>
-    <?php echo $data; ?>
+    <header>
+
+    </header>
+    <div class="content">
+      <?php echo $heading; ?>
+      <?php echo $data; ?>
+    </div>
+    <footer>
+
+    </footer>
   </body>
 </html>

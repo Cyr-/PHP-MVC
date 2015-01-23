@@ -12,7 +12,8 @@ class View
   }
 
   public function output() {
-    $data = '<p>' . $this->model->string . '</p>';
+    $heading = '<h1>' . $this->model->heading . '</h1>';
+    $data    = '<p>' . $this->model->string . '</p>';
     require_once($this->model->template);
   }
 }
