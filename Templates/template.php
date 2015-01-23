@@ -2,19 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Template name</title>
+    <title>PHP MVC</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
   </head>
   <body>
-    <header>
-
-    </header>
     <div class="content">
+      <?php require '_header.html'; ?>
+
       <?php echo $heading; ?>
       <?php echo $data; ?>
     </div>
-    <footer>
-
-    </footer>
   </body>
 </html>
