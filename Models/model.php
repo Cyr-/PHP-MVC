@@ -1,4 +1,6 @@
 <?php
+require 'connect.php';
+
 class Model
 {
   public $heading;
