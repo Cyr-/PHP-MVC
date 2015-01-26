@@ -4,14 +4,16 @@ class Model
 {
   public $title;
   public $content;
+  public $created_at;
 
   public function __construct() {
-    $this->template = 'Templates/template.php';
+    $this->template    = 'Templates/template.php';
 
-    $blog           = $this->get_blog_post(1);
+    $blog              = $this->get_blog_post(1);
 
-    $this->title    = $blog['title'];
-    $this->content  = $blog['content'];
+    $this->title       = $blog['title'];
+    $this->content     = $blog['content'];
+    $this->created_at  = $blog['created_at'];
   }
 
   private function get_blog_post($id) {

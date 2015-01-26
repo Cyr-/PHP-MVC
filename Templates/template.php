@@ -9,8 +9,9 @@
     <div class="content">
       <?php require '_header.html'; ?>
 
-      <?php echo $heading; ?>
-      <?php echo $data; ?>
+      <?php echo $title; ?>
+      <?php echo $content; ?>
+      <?php echo $created_at; ?>
     </div>
   </body>
 </html>
