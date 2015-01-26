@@ -1,14 +1,24 @@
 <?php
-require 'connect.php';
 
 class Model
 {
-  public $heading;
-  public $string;
+  public $title;
+  public $content;
 
   public function __construct() {
-    $this->heading  = 'Welcome';
-    $this->string   = 'Hello World!';
     $this->template = 'Templates/template.php';
+
+    $blog           = $this->get_blog_post(1);
+
+    $this->title    = $blog['title'];
+    $this->content  = $blog['content'];
+  }
+
+  private function get_blog_post($id) {
+    require 'connect.php';
+    $blog_query = "SELECT * FROM blog_posts WHERE id = '{$id}'";
+    $blog_data  = $db->query($blog_query);
+
+    return $blog_data->fetch_assoc();
   }
 }
