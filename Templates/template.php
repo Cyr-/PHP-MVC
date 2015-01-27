@@ -8,6 +8,7 @@
   <body>
     <div class="content">
       <?php require '_header.html'; ?>
+      <?php require '_navigation.php'; ?>
 
       <h1><?php echo $title; ?></h1>
       <p><?php echo $content; ?></p>
