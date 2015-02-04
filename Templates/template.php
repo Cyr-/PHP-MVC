@@ -10,9 +10,9 @@
       <?php require '_header.html'; ?>
       <?php require '_navigation.php'; ?>
 
-      <h1><?php echo $title; ?></h1>
-      <p><?php echo $content; ?></p>
-      <p><?php echo $created_at; ?></p>
+      <h1>Name: <?php echo $name; ?></h1>
+      <p>Height: <?php echo $height; ?> feet</p>
+      <p>Weight: <?php echo $weight; ?> pounds</p>
     </div>
   </body>
 </html>
