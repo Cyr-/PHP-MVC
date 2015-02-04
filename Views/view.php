@@ -12,9 +12,9 @@ class View
   }
 
   public function output() {
-    $title        = $this->model->title;
-    $content      = $this->model->content;
-    $created_at   = $this->model->created_at;
+    $name   = $this->model->name;
+    $height = $this->model->height;
+    $weight = $this->model->weight;
 
     require_once($this->model->template);
   }
