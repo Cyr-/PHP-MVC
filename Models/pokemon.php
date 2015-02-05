@@ -17,9 +17,17 @@ class Pokemon
     $this->id     = $id;
     $pokemon_json = $this->getPokemonAPIValues($this->id);
 
-    $this->name   = $pokemon_json->name;
-    $this->height = $pokemon_json->height;
-    $this->weight = $pokemon_json->weight;
+    $this->name    = $pokemon_json->name;
+    $this->species = ucwords($pokemon_json->species);
+    $this->height  = $pokemon_json->height;
+    $this->weight  = $pokemon_json->weight;
+
+    $this->hp              = $pokemon_json->hp;
+    $this->attack          = $pokemon_json->attack;
+    $this->defence         = $pokemon_json->defense;
+    $this->special_attack  = $pokemon_json->sp_atk;
+    $this->special_defence = $pokemon_json->sp_def;
+    $this->speed           = $pokemon_json->speed;
   }
 
   private function getPokemonAPIValues($id) {

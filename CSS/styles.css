@@ -1,4 +1,24 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
+}
+
+.base_stats {
+  list-style: none;
+}
+
+.stat {
+  position: relative;
+}
+
+.stat strong {
+  left: 1em;
+  line-height: 1;
+  position: absolute;
+  top: 1em;
+}
+
+meter {
+  height: 50px;
+  width: 255px;
 }
