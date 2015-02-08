@@ -1,6 +1,47 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Monda', sans-serif;
+}
+
+html {
+  background-color: #EE1515;
+}
+
+.content {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 50px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  font-style: none;
+}
+
+.well {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #222224;
+  box-shadow: inset 0px 0px 10px #000;
+  color: #FFF;
+}
+
+.sprite {
+  float: left;
+  width: 125px;
+}
+
+.sprite img {
+  display: block;
+  margin: auto;
 }
 
 .base_stats {
@@ -12,13 +53,20 @@
 }
 
 .stat strong {
-  left: 1em;
-  line-height: 1;
+  left: 5px;
   position: absolute;
-  top: 1em;
+  font-size: 15px;
+  color: #000;
+}
+
+.hp {
+  color: #0168AB;
 }
 
 meter {
-  height: 50px;
+  height: 20px;
   width: 255px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
