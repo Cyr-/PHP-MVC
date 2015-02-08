@@ -8,11 +8,7 @@ for($i = $gen_1_ids[0]; $i <= end($gen_1_ids); $i++) {
 ?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>PHP MVC</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-  </head>
+  <?php require 'Partials/_head.html'; ?>
   <body>
     <div class="content">
       <?php require 'Partials/_header.html'; ?>
