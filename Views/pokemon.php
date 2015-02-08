@@ -24,8 +24,8 @@ for($i = $gen_1_ids[0]; $i <= end($gen_1_ids); $i++) {
         </div>
         <h1>Name: <?php echo $pokemon->name; ?></h1>
         <p>Species: <?php echo $pokemon->species; ?></p>
-        <p>Height: <?php echo $pokemon->height; ?> meters</p>
-        <p>Weight: <?php echo $pokemon->weight; ?> kilograms</p>
+        <p>Height: <?php echo $pokemon->height . 'meter' . ($pokemon->height == 1 ? '' : 's'); ?></p>
+        <p>Weight: <?php echo $pokemon->weight . 'kilogram' . ($pokemon->weight == 1 ? '' : 's'); ?></p>
       </div>
 
       <div class="well">
