@@ -13,6 +13,8 @@ class Pokemon
   public $special_defence;
   public $speed;
   public $sprite_url;
+  public $type_one;
+  public $type_two;
 
   public function __construct($id) {
     $this->id = $id;
@@ -30,7 +32,7 @@ class Pokemon
     $this->special_defence = $pokemon['special_defence'];
     $this->speed           = $pokemon['speed'];
 
-    $this->sprite_url = "";
+    $this->sprite_url = "Sprites/{$this->id}.png";
   }
 
   private function getPokemon() {

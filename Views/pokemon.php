@@ -20,39 +20,43 @@ for($i = $gen_1_ids[0]; $i <= end($gen_1_ids); $i++) {
 
       <div class="well">
         <div class="sprite">
-          <img src="<?php echo $pokemon->sprite_url; ?>" alt="<?php echo $pokemon->name; ?>" />
+          <img src="<?= $pokemon->sprite_url; ?>" alt="<?= $pokemon->name; ?>" />
         </div>
-        <h1>Name: <?php echo $pokemon->name; ?></h1>
-        <p>Species: <?php echo $pokemon->species; ?></p>
-        <p>Height: <?php echo $pokemon->height . 'meter' . ($pokemon->height == 1 ? '' : 's'); ?></p>
-        <p>Weight: <?php echo $pokemon->weight . 'kilogram' . ($pokemon->weight == 1 ? '' : 's'); ?></p>
+        <h1>Name: <?= $pokemon->name; ?></h1>
+        <p>Species: <?= $pokemon->species; ?></p>
+        <p>Height: <?= $pokemon->height . ' meter' . ($pokemon->height == 1 ? '' : 's'); ?></p>
+        <p>Weight: <?= $pokemon->weight . ' kilogram' . ($pokemon->weight == 1 ? '' : 's'); ?></p>
+        <span class="types <?= $pokemon->type_one; ?>"><?= $pokemon->type_one; ?></span>
+        <?php if ($pokemon->type_two): ?>
+          <span class="types <?= $pokemon->type_two; ?>"><?= $pokemon->type_two; ?></span>
+        <?php endif; ?>
       </div>
 
       <div class="well">
         <ul class="base_stats">
           <li class="stat">
-            <strong>HP: <?php echo $pokemon->hp; ?></strong>
-            <meter class="hp" max="255" value="<?php echo $pokemon->hp; ?>">
+            <strong>HP: <?= $pokemon->hp; ?></strong>
+            <meter class="hp" max="255" value="<?= $pokemon->hp; ?>">
           </li>
           <li class="stat">
-            <strong>Attack: <?php echo $pokemon->attack; ?></strong>
-            <meter class="attack" max="255" value="<?php echo $pokemon->attack; ?>" />
+            <strong>Attack: <?= $pokemon->attack; ?></strong>
+            <meter class="attack" max="255" value="<?= $pokemon->attack; ?>" />
           </li>
           <li class="stat">
-            <strong>Defence: <?php echo $pokemon->defence; ?></strong>
-            <meter class="defence" max="255" value="<?php echo $pokemon->defence; ?>" />
+            <strong>Defence: <?= $pokemon->defence; ?></strong>
+            <meter class="defence" max="255" value="<?= $pokemon->defence; ?>" />
           </li>
           <li class="stat">
-            <strong>Special Attack: <?php echo $pokemon->special_attack; ?></strong>
-            <meter class="special_attack" max="255" value="<?php echo $pokemon->special_attack; ?>" />
+            <strong>Special Attack: <?= $pokemon->special_attack; ?></strong>
+            <meter class="special_attack" max="255" value="<?= $pokemon->special_attack; ?>" />
           </li>
           <li class="stat">
-            <strong>Special Defence: <?php echo $pokemon->special_defence; ?></strong>
-            <meter class="special_defence" max="255" value="<?php echo $pokemon->special_defence; ?>" />
+            <strong>Special Defence: <?= $pokemon->special_defence; ?></strong>
+            <meter class="special_defence" max="255" value="<?= $pokemon->special_defence; ?>" />
           </li>
           <li class="stat">
-            <strong>Speed: <?php echo $pokemon->speed; ?></strong>
-            <meter class="speed" max="255" value="<?php echo $pokemon->speed; ?>" />
+            <strong>Speed: <?= $pokemon->speed; ?></strong>
+            <meter class="speed" max="255" value="<?= $pokemon->speed; ?>" />
           </li>
         </ul>
       </div>
